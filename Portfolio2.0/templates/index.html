@@ -35,15 +35,15 @@
         <nav id="navbar" class="nav-menu">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
+                    <a class="nav-link active" aria-current="page" href="#inicio">
                         <i class="bi bi-house"></i> Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#sobre">
                         <i class="bi bi-person"></i> Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#habilidades">
                         <i class="bi bi-list-check"></i> Habilidades</a>
                 </li>
                 <li class="nav-item">
@@ -64,16 +64,185 @@
 
     <main id="main">
         <section id="inicio" class="row m-0 p-0">
-            <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
+            <div class="col-md-7 d-flex justify-content-center align-items-center flex-column">
                 <h2 class="text-white text-shadow">Gabriel Nerys</h2>
-                <span id="subtitle" class="text-white text-shadow">Desenvolvedor</span>
+                <span id="subtitle" class="text-white text-shadow fs-5">Desenvolvedor</span>
             </div>
 
-            <div class="col-md-7 d-flex justify-content-end align-items-end">
+            <div class="col-md-5 d-flex justify-content-end align-items-end">
                 <div id="arraste" class="d-flex align-items-center">
                 <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-                <a href="">Arraste para mais</a>
+                <a href="#sobre">Arraste para mais</a>
                 </div>                                
+            </div>
+        </section>
+
+        <section id="sobre" class="container mt-5">
+            <div class="row w-100">
+                <div class="col-md-12">
+                    <h2 class="pt-3">Sobre</h2>
+                    <p style="text-align: justify;">Eu sou Gabriel, um apaixonado por tecnologia e programação. Desde 
+                        cedo, descobri a minha paixão por criar soluções inovadoras através do 
+                        código e, desde então, venho me aprimorando e aperfeiçoando minhas 
+                        habilidades como desenvolvedor.
+                            Consegui ter uma boa base do que era programação e assim escolhi a minha área de atuação
+                        como front-end, mas também tenho praticas em outras áreas como mobile.
+                            Gostei da área de tecnologia e resolvi me aprofundar mais nessa carreira de dev,
+                        hoje estou cursando meu tecnólogo de desenvolvimento de sistemas multiplataformas na FATEC.</p>
+                </div>
+
+                <div class="row mt-4">
+                    <div id="img-sobre" class="col-md-4">
+                        <img class="img-fluid shadow" src="../static/img/nerys_sobremim.png" alt="Foto do Gabriel">
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Desenvolvedor</h3>
+                        <p style="text-align: justify;">Atualmente procuro oportunidades de emprego na area, para desenvolver 
+                            cada vez mais, minhas habilidades. Tenho Conhecimentos com HTML, CSS, JavaScript,
+                            PHP, Android, Asp.Net e bancos SQL e MYSQL.
+                        </p>
+
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush fs-5">
+                                    <li class="list-group-item">
+                                        Niver: <span class="fw-lighter">30 de Maio de 2003</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Idade: <span class="fw-lighter">20 anos</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Cidade: <span class="fw-lighter">São Paulo</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Estado: <span class="fw-lighter">São paulo</span>
+                                    </li>                                    
+                                  </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush fs-5">
+                                    <li class="list-group-item">
+                                        Hobby: <span class="fw-lighter">Video Game</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Site: <a href="" target="_blank" class="fw-lighter text-decoration-none link-dark"
+                                        ></a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        Trabalho: <a href="" target="_blank" class="fw-lighter text-decoration-none link-dark"
+                                        >Disponível</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Experiência: <span class="fw-lighter">+0</span>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+
+                        <p style="text-align: justify;">Acredito que a tecnologia tem o poder de transformar o mundo e estou 
+                            animado(a) para continuar a contribuir com essa transformação através 
+                            de soluções criativas e inovadoras. Espero que este portfolio lhe dê 
+                            uma ideia do meu trabalho e do meu potencial como desenvolvedor. 
+                            Sinta-se à vontade para explorar e entrar em contato caso tenha alguma 
+                            dúvida ou queira discutir possíveis colaborações.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 section-bg" id="habilidades">
+            <div class="container pb-5">
+                <h2 class="pt-5">Habilidades</h2>
+                <p>Em todo tempo como profissional e estudante de tecnologia eu adquiri algumas
+                    habilidades técnicas e não técnicas,
+                    a maioria delas estão aqui, de acordo com a porcentagem de conhecimento que eu Acredito
+                    ter em cada uma delas.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">HTML</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                          </div>
+
+                          <p class="mt-3 mb-0">JavaScript</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 35%">35%</div>
+                          </div>
+
+                          <p class="mt-3 mb-0">SQL</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 45%">45%</div>
+                          </div>
+
+                          <p class="mt-3 mb-0">Bootstrap</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 40%">40%</div>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">CSS</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%">50%</div>
+                          </div>
+
+                          <p class="mt-3 mb-0">Git</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                          </div>
+
+                          <p class="mt-3 mb-0">Java</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 35%">35%</div>
+                          </div>
+
+                          <p class="mt-3 mb-0">Python</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                          </div>
+                    </div>
+                </div>
+
+                <hr class="w-50 mt-5 me-auto ms-auto">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">Trabalho em equipe</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 95%">95%</div>
+                        </div>
+
+                          <p class="mt-3 mb-0">Proatividade</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 98%">98%</div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Orientação a detalhes</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%">85%</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">Comunicação</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 95%">95%</div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Empatia</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%">85%</div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Comprometimento</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 98%">98%</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
