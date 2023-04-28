@@ -6,7 +6,7 @@ html,body{
     height: 100%;
 }
 
-
+/* Asidebar da pagina*/
 #header{
     position: fixed;
     top: 0;
@@ -87,11 +87,12 @@ html,body{
     color: #149ddd;
 }
 
-
+/* definindo o tamanh0 da main por causa do aside*/
 #main{
     margin-left: 300px;
 }
 
+/* section inicio*/
 section#inicio{
     background-image: url(./img/bannerPortifolio.png);
     background-repeat: no-repeat;
@@ -121,6 +122,7 @@ section#inicio div#arraste a{
     color: #fff;
 }
 
+/* configurando o icone do menu mobile*/
 i.menu-mobile{
     position: fixed;
     color: #fff;
@@ -146,6 +148,52 @@ i.menu-mobile{
     left: 0;
 }
 
+/* Animaçoes da pagina sobre primeiro texto*/
+/* Para chamar o atributo "data" que foi utilizado no html usasse colchetes*/
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+
+/* classes globais dos movimetos das animações */
+[data-anime="down"]{
+    transform: translate3d(0, -100px, 0);
+}
+
+[data-anime="up"]{
+    transform: translate3d(0, 100px, 0);
+}
+
+[data-anime="left"]{
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+/* a animação so aparecera quando esta classe for true*/
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+    
+/* responsividade dos botoes direita e esquerda do carrossel*/
+@media(max-width: 1700px){
+    .carousel-control-prev{
+        margin-left: 0;
+    }
+    
+    .carousel-control-next{
+        margin-right: 0;
+    }
+
+    [data-anime="right"]{
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+
+/* Responsividade da section inicio*/
 @media(max-width: 1030px){
     #header{
         left: -300px;
@@ -166,7 +214,7 @@ i.menu-mobile{
 }
 @media(max-width: 375px){
     section#inicio h2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 @media(max-width: 1385px){
@@ -180,6 +228,7 @@ i.menu-mobile{
     }
 }
 
+/* Estilizando a scrollbar*/
 *::-webkit-scrollbar{
     width: 10px;
 }
@@ -194,10 +243,12 @@ i.menu-mobile{
     background-color: #252c90;
 }
 
+/* mudando a cor da section habilidades*/
 .section-bg{
     background-color: #eff5ff;
 }
 
+/* Section curriculo*/
 .cv .cv-title{
     font-weight: 700;
     margin-top: 20px;
@@ -241,6 +292,7 @@ i.menu-mobile{
     border-radius: 50%;
 }
 
+/* Section portfolio*/
 .carousel-control-prev{
     margin-left: -7rem;
     transition: 0.3s;
@@ -255,12 +307,3 @@ i.menu-mobile{
     margin-bottom: -35px;
 }
 
-@media(max-width: 1700px){
-    .carousel-control-prev{
-        margin-left: 0;
-    }
-    
-    .carousel-control-next{
-        margin-right: 0;
-    }
-}
