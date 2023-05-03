@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
 from config import email,senha
 
+
 app = Flask(__name__)
 app.secret_key = 'Skatebord150'
 
@@ -19,8 +20,8 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome,
-        self.email = email,
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
 
 @app.route('/')
@@ -39,8 +40,8 @@ def send():
         msg = Message(
 
             subject = f'{formContato.nome} te enviou uma mensagem do Portfólio',
-            sender = app.config.ger("MAIL_USERNAME"), 
-            recipients= ['biel.nerys150@gmail.com', app.config.ger("MAIL_USERNAME")],
+            sender = app.config.get("MAIL_USERNAME"), 
+            recipients= ['biel.nerys150@gmail.com', app.config.get("MAIL_USERNAME")],
             body= f'''
 
             {formContato.nome} com o email {formContato.email}, te enviou a seguinte
