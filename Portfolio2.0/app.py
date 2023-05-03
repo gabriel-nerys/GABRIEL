@@ -3,7 +3,7 @@ from flask_mail import Mail, Message
 from dotenv import load_dotenv
 import os
 load_dotenv()
-
+ 
 
 app = Flask(__name__)
 app.secret_key = 'Skatebord150'
