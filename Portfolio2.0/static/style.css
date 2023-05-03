@@ -230,7 +230,7 @@ i.menu-mobile{
         background-image: url(./img/bannerPortifolio.png);
         background-repeat: no-repeat;
         background-size: contain;
-        
+        background-attachment: fixed;
         background-position: center;
     
         
