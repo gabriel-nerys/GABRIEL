@@ -226,15 +226,6 @@ i.menu-mobile{
     section#inicio h2{
         font-size: 3rem;
     }
-    section#inicio{
-        background-image: url(./img/bannerPortifolio.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-attachment: fixed;
-        background-position: center;
-    
-        
-    }
 }
 
 /* Estilizando a scrollbar*/
