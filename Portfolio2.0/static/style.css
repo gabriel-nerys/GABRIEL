@@ -229,12 +229,11 @@ i.menu-mobile{
     section#inicio{
         background-image: url(./img/bannerPortifolio.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        background-attachment: fixed;
+        background-size: cover;
+        
         background-position: center;
         
-        width: 100%;
-        height: 100vh;
+        
     }
 }
 
