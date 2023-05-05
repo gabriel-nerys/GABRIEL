@@ -229,7 +229,7 @@ i.menu-mobile{
     section#inicio{
         background-image: url(./img/bannerPortifolio.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         
         background-position: center;
         
