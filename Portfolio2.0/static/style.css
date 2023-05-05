@@ -221,7 +221,7 @@ i.menu-mobile{
     section#inicio{
         background-image: url(./img/filtro-azul.jpeg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-attachment: fixed;
         background-position: center;
 
